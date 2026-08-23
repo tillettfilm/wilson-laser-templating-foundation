@@ -1,0 +1,8 @@
+.DS_Store
+assets/.DS_Store
+
+# Exclude original large PNGs and uncompressed source videos
+assets/*.png
+assets/Habitual by Giles Denning.mp4
+assets/Morning Routine.mp4
+assets/PeteTaylor_MM300_TillettFilm.mp4
