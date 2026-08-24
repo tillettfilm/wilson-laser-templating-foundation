@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "green-light",
+      "name": "first-cut",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "3456"],
-      "port": 3456
+      "runtimeArgs": ["-m", "http.server", "4780"],
+      "port": 4780
     }
   ]
 }
