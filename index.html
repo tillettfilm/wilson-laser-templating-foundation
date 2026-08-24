@@ -291,7 +291,7 @@
   .scene-header { margin-bottom: 22px; max-width: 880px; }
   .scene-header .label-caps { margin-bottom: 10px; }
 
-  /* ===== SCENE 01 — OPENING CREDITS ===== */
+  /* ===== SCENE 01 - OPENING CREDITS ===== */
   .cover { justify-content: center; }
   .cover-inner { width: 100%; max-width: 920px; margin: 0 auto; }
   .cover-mark { margin-bottom: 32px; }
@@ -343,7 +343,7 @@
   }
   .slate-value { font-size: 14px; font-weight: 600; color: var(--ink); }
 
-  /* ===== SCENE — THE LISTENING (quote + interpretation pairs) ===== */
+  /* ===== SCENE - THE LISTENING (quote + interpretation pairs) ===== */
   .listening-pairs {
     display: flex;
     flex-direction: column;
@@ -430,7 +430,7 @@
     line-height: 1.5;
   }
 
-  /* Director credits — used on Welcome scene as a film-style bio block */
+  /* Director credits - used on Welcome scene as a film-style bio block */
   .director-credits {
     margin-top: 22px;
     padding-top: 18px;
@@ -557,7 +557,7 @@
   }
   .trust-line strong { color: var(--ink); font-weight: 600; }
 
-  /* ===== SCENE 03 — THE STORY (pillars) ===== */
+  /* ===== SCENE 03 - THE STORY (pillars) ===== */
   .pillars-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -598,7 +598,7 @@
     line-height: 1.4;
   }
 
-  /* ===== SCENE 04 — THE TREATMENT (moodboard) ===== */
+  /* ===== SCENE 04 - THE TREATMENT (moodboard) ===== */
   .treatment-grid {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -660,7 +660,7 @@
   }
   .mood-cell-wide img { width: 100%; height: 100%; object-fit: fill; display: block; }
 
-  /* ===== SCENE 05 — THE PRODUCTION (timeline) ===== */
+  /* ===== SCENE 05 - THE PRODUCTION (timeline) ===== */
   .timeline {
     margin-top: 22px;
     display: grid;
@@ -730,7 +730,7 @@
     min-width: 110px;
   }
 
-  /* ===== SCENE 06 — THE INVESTMENT ===== */
+  /* ===== SCENE 06 - THE INVESTMENT ===== */
   .investment-block {
     background: var(--bg-invert);
     color: #fff;
@@ -779,7 +779,7 @@
     line-height: 1.85;
   }
   .investment-includes-list li::before {
-    content: "—";
+    content: "·";
     margin-right: 10px;
     color: rgba(255,255,255,0.4);
   }
@@ -817,7 +817,7 @@
   }
   .investment-alt-amount strong { color: var(--ink); font-weight: 600; }
 
-  /* ===== SCENE 07 — THE AGREEMENT ===== */
+  /* ===== SCENE 07 - THE AGREEMENT ===== */
   .agreement { justify-content: center; }
   .agreement-inner { max-width: 760px; margin: 0 auto; }
   .agreement-quote {
@@ -967,6 +967,11 @@
     max-width: 760px;
     width: 100%;
     margin: 0 auto;
+  }
+  /* Portrait variant - for a vertically filmed note from the director */
+  .video-frame.portrait {
+    aspect-ratio: 9 / 16;
+    max-width: 320px;
   }
   .video-frame video,
   .video-frame iframe {
@@ -1197,14 +1202,14 @@
     max-width: 320px;
   }
 
-  /* Cover hero placeholder — wide atmospheric band above the title */
+  /* Cover hero placeholder - wide atmospheric band above the title */
   .cover-hero-img {
     aspect-ratio: 21 / 6;
     margin-bottom: 28px;
     min-height: 100px;
   }
 
-  /* Director portrait placeholder — sits beside the heading */
+  /* Director portrait placeholder - sits beside the heading */
   .director-portrait-grid {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -1376,7 +1381,7 @@
 <!-- ============ SCENES ============ -->
 <div class="scenes" id="scenes">
 
-  <!-- ====== ACT 01 — OPENING CREDITS ====== -->
+  <!-- ====== ACT 01 - OPENING CREDITS ====== -->
   <section class="scene cover active" data-scene="cover" data-title="Opening Credits">
     <div class="cover-inner">
       <div class="cover-mark">
@@ -1392,7 +1397,7 @@
 
       <h1 class="cover-title">The First Cut.</h1>
       <p class="cover-prepared">A creative direction presentation, prepared by hand for <strong>Pete Wilson</strong>.</p>
-      <p class="cover-tagline">One shoot day. A quarter of material.<br>Built for the standard you're setting.</p>
+      <p class="cover-tagline">A quarter of material.<br>Built for the standard you're setting.</p>
 
       <div class="slate">
         <div class="slate-item">
@@ -1415,9 +1420,9 @@
     </div>
   </section>
 
-  <!-- ====== ACT 02 — WELCOME VIDEO ======
+  <!-- ====== ACT 02 - WELCOME VIDEO ======
        CHARLIE: Drop a 30-60 second welcome video into assets/welcome.mp4.
-       This is a personal note framing the proposal — different from the brochure intro.
+       This is a personal note framing the proposal - different from the brochure intro.
        Suggestion: "Lee, here's the proposal we talked about. Take your time. Sign at the
        end if it lands. Either way, thank you for the call." -->
   <section class="scene" data-scene="welcome" data-title="Directed By">
@@ -1426,11 +1431,11 @@
           <div class="label-caps">Act 02</div>
           <div class="film-credit-role">Directed by</div>
           <h2 class="film-credit-name">Charlie Tillett</h2>
-          <p class="film-credit-byline">Director and founder of Tillett Film. Six years making cinematic brand films for founders and premium brands. Below, a forty-five-second note framing this proposal.</p>
+          <p class="film-credit-byline">Director and founder of Tillett Film. Six years making cinematic brand films for founders and premium brands. Below, a short note framing this proposal.</p>
         </div>
 
-      <div class="video-frame video-thumb" data-video="assets/TBC-charlie-intro.mp4" style="cursor:pointer;">
-        <video src="assets/TBC-charlie-intro.mp4#t=0.001" muted playsinline preload="metadata" style="width:100%;height:100%;display:block;pointer-events:none;"></video>
+      <div class="video-frame portrait video-thumb" data-video="assets/intro/charlie-intro_web.mp4" style="cursor:pointer;">
+        <video src="assets/intro/charlie-intro_web.mp4#t=0.001" muted playsinline preload="metadata" style="width:100%;height:100%;display:block;pointer-events:none;"></video>
         <div class="work-card-thumb-play"></div>
       </div>
       <p class="video-tag"><strong>In the video:</strong> a walkthrough of the film proposal, the production approach and what happens after green light.</p>
@@ -1449,7 +1454,7 @@
         <div class="director-credit-line">
           <span class="director-credit-role">Brands this year</span>
           <span class="director-credit-rule"></span>
-          <span class="director-credit-value">12 booked</span>
+          <span class="director-credit-value">14 booked</span>
         </div>
         <div class="director-credit-line">
           <span class="director-credit-role">Based in</span>
@@ -1460,7 +1465,7 @@
     </div>
   </section>
 
-  <!-- ====== ACT 03 — WHAT YOU TOLD ME ====== -->
+  <!-- ====== ACT 03 - WHAT YOU TOLD ME ====== -->
   <section class="scene alt" data-scene="told" data-title="Based On">
     <div class="scene-inner">
       <div class="scene-header">
@@ -1475,74 +1480,52 @@
         <div class="listening-pair">
           <div class="quote-card">
             <div class="quote-card-label">No. 01 · The Purpose</div>
-            <div class="quote-card-text">You want to look established, professional and commercial from day one — not like a business that's just started.</div>
+            <div class="quote-card-text">You want to look established, professional and commercial, and not like a business that's just started.</div>
           </div>
           <div class="interpretation-card">
             <div class="interpretation-label">Through My Lens</div>
-            <div class="interpretation-text">Filmed the way engineering and manufacturing brands film their capability — precision, process, proof. No stock office shots, no stagey handshakes.</div>
-          </div>
-        </div>
-
-        <div class="listening-pair">
-          <div class="quote-card">
-            <div class="quote-card-label">No. 02 · The Audience</div>
-            <div class="quote-card-text">Your market is commercial — kitchen fitters, merchants, developers, refurb and housing. Not the general public, not local one-offs.</div>
-          </div>
-          <div class="interpretation-card">
-            <div class="interpretation-label">Through My Lens</div>
-            <div class="interpretation-text">Shot and paced like B2B capability content, not consumer lifestyle — built to work silent, since that's how the people who decide will meet it.</div>
-          </div>
-        </div>
-
-        <div class="listening-pair">
-          <div class="quote-card">
-            <div class="quote-card-label">No. 03 · The Standard</div>
-            <div class="quote-card-text">You want one standard visible to everyone who works with you and for you — "this is how we work." You're at capacity, and can't take people on until the business looks like somewhere worth joining.</div>
-          </div>
-          <div class="interpretation-card">
-            <div class="interpretation-label">Through My Lens</div>
-            <div class="interpretation-text">A film that does double duty — the reference point that wins commercial work, and the one that makes the business look like somewhere worth joining.</div>
+            <div class="interpretation-text">We're filming your capability. Showcasing precision, process and proof. We're eliminating stock shots, and valuing authenticity.</div>
           </div>
         </div>
 
       </div>
 
-      <p class="pull-quote" style="margin-top:28px;">The film has to win the work, and look like somewhere worth joining.<span style="display:block; font-size:0.8em; margin-top:10px; color:var(--ink-soft);">One standard, visible to clients and your own team alike.</span></p>
+      <p class="pull-quote" style="margin-top:28px;">A reference point that not only wins commercial work, but makes the business look somewhere people have to join.</p>
     </div>
   </section>
 
-  <!-- ====== ACT 04 — THE FILM ====== -->
+  <!-- ====== ACT 04 - THE FILM ====== -->
   <section class="scene" data-scene="story" data-title="The Film">
     <div class="scene-inner">
       <div class="scene-header">
         <div class="label-caps">Act 04 · The Film</div>
         <h2 class="heading-large">One film. Three jobs.</h2>
-        <p class="body-large" style="margin-top:14px; max-width:720px;">Not a showreel — proof. Built to run on the website, the profile, and in front of the merchants, fitters and developers who decide who gets the work.</p>
+        <p class="body-large" style="margin-top:14px; max-width:720px;">Built to run on the website, the profile, and in front of the merchants, fitters and developers who decide who gets the work. Proving your capabilities, showcasing the standard and making Wilson Laser Templating the no brainer.</p>
       </div>
 
       <div class="pillars-grid">
         <div class="pillar">
           <div class="pillar-num">01 · The Process</div>
-          <div class="pillar-title">Precision, On Camera</div>
-          <div class="pillar-desc">The laser, the template, the process — filmed the way engineering brands film their capability, not the way trades usually get filmed.</div>
+          <div class="pillar-title">Precision On Camera</div>
+          <div class="pillar-desc">The laser, the template, the process filmed the way engineering brands film their capability, not the tragic way trades usually get filmed.</div>
         </div>
         <div class="pillar">
           <div class="pillar-num">02 · The Standard</div>
           <div class="pillar-title">This Is How We Work</div>
-          <div class="pillar-desc">A single reference point for anyone who works with you, or for you — what "done properly" looks like, on record.</div>
+          <div class="pillar-desc">A reference point for anyone who works with you, or for you. What "done properly" looks like.</div>
         </div>
         <div class="pillar">
           <div class="pillar-num">03 · The Market</div>
           <div class="pillar-title">Built For Who Decides</div>
-          <div class="pillar-desc">Made for kitchen fitters, merchants, developers and refurb and housing buyers — not a general audience. Every frame aimed at the people who choose who gets the job.</div>
+          <div class="pillar-desc">Made for kitchen fitters, merchants, developers and refurb and housing buyers. Not the general audience! Every frame aimed at the people who choose who gets the job.</div>
         </div>
       </div>
 
-      <p class="pull-quote">The film that makes you the no-brainer before the phone call happens.<span style="display:block; font-size:0.82em; margin-top:10px; color:var(--ink-soft); font-style:normal; font-weight:400; letter-spacing:0;">One hero film · 6–8 stills · built for site, profile and direct send to merchants and fitters</span></p>
+      <p class="pull-quote">The film that does the convincing before you're in the room.<span style="display:block; font-size:0.82em; margin-top:10px; color:var(--ink-soft); font-style:normal; font-weight:400; letter-spacing:0;">One hero film · 6–8 stills · built for site, profile and direct send to merchants and fitters</span></p>
     </div>
   </section>
 
-  <!-- ====== ACT 05 — PREVIOUS WORK ======
+  <!-- ====== ACT 05 - PREVIOUS WORK ======
        CHARLIE: This is where you show clients what your work actually looks and feels like.
        The featured video should be the single most relevant piece for this client. Replace
        the placeholder div with a Vimeo/YouTube embed or local video.
@@ -1560,14 +1543,15 @@
         <div class="work-secondary">
           <div class="work-secondary-grid">
           <div class="work-card">
-            <div class="work-card-thumb" style="background:#0a0a0a;">
-              <img src="assets/client/progressive-technology-thumbnail.jpg" alt="Progressive Technology Advanced Materials" style="width:100%;height:100%;object-fit:cover;display:block;">
+            <div class="work-card-thumb video-thumb" style="background:#0a0a0a;" data-video="assets/filmography/progressive-technology_web.mp4">
+              <img src="assets/filmography/progressive-technology-thumbnail.jpg" alt="Progressive Technology Advanced Materials" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <div class="work-card-thumb-play"></div>
             </div>
             <div class="work-card-meta">
-              <div class="work-card-cat">Capability Film · In Production</div>
+              <div class="work-card-cat">Capability Film</div>
               <div class="work-card-title">Progressive Technology: Advanced Materials</div>
-              <div class="work-card-desc">Precision manufacturing, told with the same discipline it's built with. Currently in production — still shown here ahead of the finished cut.</div>
-              <div class="work-card-note">[TBC — swap in the finished PTAM cut once delivered] Precision, engineering, B2B — the exact register this needs to hit for kitchen fitters, merchants and developers.</div>
+              <div class="work-card-desc">Precision manufacturing, told with the same discipline it's built with. Composite work, cleanroom process and tolerances measured in fractions.</div>
+              <div class="work-card-note">Precision, engineering, B2B. The exact register this needs to hit for kitchen fitters, merchants and developers.</div>
             </div>
           </div>
           <div class="work-card">
@@ -1579,7 +1563,7 @@
               <div class="work-card-cat">Event Film</div>
               <div class="work-card-title">Pete Taylor: MM300</div>
               <div class="work-card-desc">A fraction of the event captured as a single cinematic piece building anticipation.</div>
-              <div class="work-card-note">Live capture under pressure — the same real-time approach the shoot day on your site will need.</div>
+              <div class="work-card-note">Live capture under pressure, the same real-time approach the shoot day on your site will need.</div>
             </div>
           </div>
           <div class="work-card">
@@ -1591,7 +1575,7 @@
               <div class="work-card-cat">Campaign</div>
               <div class="work-card-title">Giles Denning: Habitual</div>
               <div class="work-card-desc">The official launch of Habitual: The Berkshire Men's Club film powering an impeccable concept.</div>
-              <div class="work-card-note">Proof one shoot day can be built into more than one deliverable across a campaign — the same principle behind your quarter.</div>
+              <div class="work-card-note">Proof one shoot day can be built into more than one deliverable across a campaign. The same principle behind your quarter.</div>
             </div>
           </div>
           <div class="work-card">
@@ -1603,7 +1587,7 @@
               <div class="work-card-cat">Founder Project</div>
               <div class="work-card-title">Ollie Ollerton</div>
               <div class="work-card-desc">A morning routine portrait built around presence, discipline and quiet authority.</div>
-              <div class="work-card-note">Quiet authority and discipline on camera — the same tone that says "this is how we work."</div>
+              <div class="work-card-note">Quiet authority and discipline on camera, the same tone that says "this is how we work."</div>
             </div>
           </div>
           </div>
@@ -1611,34 +1595,34 @@
         </div>
       </div>
 
-      <!-- VOICES — LinkedIn recommendations -->
+      <!-- VOICES - LinkedIn recommendations -->
       <div class="voices-strip">
         <div class="voices-strip-label">What they said after</div>
         <div class="voices-grid">
           <div class="voice">
-            <div class="voice-quote">The films he's created for us have become a core part of our branding across our social platforms.</div>
-            <div class="voice-author">Jamie Harding <span>· CEO and Founder, Et Lorem Ltd</span></div>
+            <div class="voice-quote">The reels and stills he delivered told the story perfectly, and the turnaround was fast without compromising on quality. He understands how to capture transformation, not just footage.</div>
+            <div class="voice-author">Danny Saggers <span>· Founder, Kings of Mastery</span></div>
           </div>
           <div class="voice">
-            <div class="voice-quote">Charlie creates world-class, timeless brand assets that resonate with the people they're intended to.</div>
-            <div class="voice-author">Giles Denning <span>· Founder, PerformX</span></div>
+            <div class="voice-quote">How you grow businesses is you create assets. The first event had eight people, now we fill rooms with 30 or 40. Retreats sell out. The authority we've built is an asset.</div>
+            <div class="voice-author">Pete Taylor <span>· Founder, Heroic Man</span></div>
           </div>
           <div class="voice">
-            <div class="voice-quote">Charlie combines professionalism with personality. His communication, timekeeping and organisation were spot on throughout.</div>
-            <div class="voice-author">Gary Swanwick <span>· Entrepreneur and Investor</span></div>
+            <div class="voice-quote">Timeless brand assets that truly resonate. He stands out against the wallpaper of generic throwaway marketing.</div>
+            <div class="voice-author">Giles Denning <span>· PerformX</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== ACT 06 — THE LOOKBOOK (Creative Direction) ====== -->
+  <!-- ====== ACT 06 - THE LOOKBOOK (Creative Direction) ====== -->
   <section class="scene alt" data-scene="treatment" data-title="The Lookbook">
     <div class="scene-inner wide">
       <div class="scene-header">
         <div class="label-caps">Act 06 · The Lookbook</div>
         <h2 class="heading-large">How it will look. How it will feel.</h2>
-        <!-- WORKING TITLE — the candidate name for the film itself.
+        <!-- WORKING TITLE - the candidate name for the film itself.
              A real filmmaker move. Updates per client. -->
         <div class="working-title-callout">
           <div class="working-title-label">Working Title</div>
@@ -1650,28 +1634,28 @@
         <div class="treatment-text">
           <div class="treatment-block">
             <div class="treatment-block-label">Visual</div>
-            <div class="treatment-block-text">Close on the laser line finding its mark, the material, the hands doing the work. Wide enough to show the site is run properly; tight enough to show the precision. No stock office shots, no stagey handshakes — just the process, lit and framed the way engineering brands shoot their capability.</div>
+            <div class="treatment-block-text">Close on the laser line finding its mark, the material, the hands doing the work. Wide enough to show the site is run properly; tight enough to show the precision. No stock office shots, no stagey handshakes. Just the process, lit and framed the way engineering brands shoot their capability.</div>
           </div>
           <div class="treatment-block">
             <div class="treatment-block-label">Pace</div>
-            <div class="treatment-block-text">Measured and confident, not fast-cut hype — cut to the rhythm of the process itself, so control and precision read before anyone even speaks.</div>
+            <div class="treatment-block-text">Measured and confident, not fast-cut hype. Cut to the rhythm of the process itself, so control and precision read before anyone even speaks.</div>
           </div>
           <div class="treatment-block">
             <div class="treatment-block-label">Sound</div>
-            <div class="treatment-block-text">Minimal — the laser, the tools, the site, with sparse, confident scoring underneath. Built to work silent, since most of the merchants and fitters who need to see this will meet it scrolling, sound off.</div>
+            <div class="treatment-block-text">Minimal. The laser, the tools, the site, with sparse, confident scoring underneath. Built to work silent, since most of the merchants and fitters who need to see this will meet it scrolling, sound off.</div>
           </div>
           <div class="treatment-block">
             <div class="treatment-block-label">Structure</div>
-            <div class="treatment-block-text">Opens on arrival on site. Builds through the live template — the laser, the material, the read. Closes on the finished result and the standard statement: this is how we work.</div>
+            <div class="treatment-block-text">Opens on arrival on site. Builds through the live template: the laser, the material, the read. Closes on the finished result and the standard statement: this is how we work.</div>
           </div>
         </div>
 
-        <!-- MOODBOARD — six visual references that define the look.
+        <!-- MOODBOARD - six visual references that define the look.
              CHARLIE: Aim for three from your own previous work + three from films/photographers you admire.
              To use a real image, replace the inner div with: <img src="assets/mood-1.jpg" alt="">
              Hover labels describe what each cell should be. -->
         <div class="moodboard">
-          <!-- TOP: full-width span — raw vs graded comparison -->
+          <!-- TOP: full-width span - raw vs graded comparison -->
           <div class="mood-cell mood-cell-video">
             <video src="assets/tillettfilm-hero_3.mp4" autoplay loop muted playsinline></video>
             <div class="mood-cell-label">The Look</div>
@@ -1686,7 +1670,7 @@
     </div>
   </section>
 
-  <!-- ====== ACT 07 — THE PRODUCTION ====== -->
+  <!-- ====== ACT 07 - THE PRODUCTION ====== -->
   <section class="scene" data-scene="production" data-title="Production Schedule">
     <div class="scene-inner">
       <div class="scene-header">
@@ -1701,7 +1685,7 @@
         <div class="phase">
           <div class="phase-week">October</div>
           <div class="phase-title">Foundation Shoot</div>
-          <div class="phase-desc">One full shoot day on site — exact date to be confirmed within October. You running a live template, the laser, the process, captured to deliver the whole quarter's material in a single day: the hero capability film, 6–8 stills for site and profile, plus a full profile and website audit and bio rewrite.</div>
+          <div class="phase-desc">One full shoot day on site, with the exact date confirmed within October. You running a live template, the laser, the process, captured to deliver the whole quarter's material in a single day: the hero capability film, 6–8 stills for site and profile, plus a full profile and website audit and bio rewrite.</div>
         </div>
         <div class="phase">
           <div class="phase-week">November</div>
@@ -1711,14 +1695,14 @@
         <div class="phase">
           <div class="phase-week">December</div>
           <div class="phase-title">Reach & Review</div>
-          <div class="phase-desc">No new shoot. Continued distribution, plus one further cut — an employer-brand piece or a second capability angle for housing and refurb. Reassessed together at month end, based on the assets delivered and the trajectory of the business.</div>
+          <div class="phase-desc">No new shoot. Continued distribution, plus one further cut, either an employer-brand piece or a second capability angle for housing and refurb. Reassessed together at month end, based on the assets delivered and the trajectory of the business.</div>
         </div>
       </div>
 
       <div class="deliverables">
         <div class="deliverables-label">What lands in your inbox · October</div>
         <div class="deliverables-grid">
-          <div class="deliverable-item"><strong>Hero capability film</strong><span class="deliverable-item-spec">The laser, the template, the process — a full quarter's material from one shoot</span></div>
+          <div class="deliverable-item"><strong>Hero capability film</strong><span class="deliverable-item-spec">The laser, the template, the process. A full quarter's material from one shoot</span></div>
           <div class="deliverable-item"><strong>6–8 stills</strong><span class="deliverable-item-spec">For site and profile</span></div>
           <div class="deliverable-item"><strong>Profile & website audit</strong><span class="deliverable-item-spec">Plus a full bio rewrite</span></div>
           <div class="deliverable-item"><strong>Raw footage archive</strong><span class="deliverable-item-spec">Banked for the November and December cuts</span></div>
@@ -1731,7 +1715,7 @@
     </div>
   </section>
 
-  <!-- ====== ACT 08 — THE INVESTMENT ====== -->
+  <!-- ====== ACT 08 - THE INVESTMENT ====== -->
   <section class="scene" data-scene="investment" data-title="The Investment">
     <div class="scene-inner narrow">
       <div class="scene-header">
@@ -1743,7 +1727,7 @@
       <div class="investment-block">
         <div class="investment-label">Foundation Phase · October–December</div>
         <div class="investment-amount">£5,000<span class="investment-amount-suffix">across the quarter</span></div>
-        <p class="investment-summary">One shoot day in October banking a full quarter's material, a profile and website audit with bio rewrite, and one further cut in each of November and December — payment weighted to your cashflow, lighter at the start, heavier at the end.</p>
+        <p class="investment-summary">One shoot day in October banking a full quarter's material, a profile and website audit with bio rewrite, and one further cut in each of November and December. Payment weighted to your cashflow, lighter at the start, heavier at the end.</p>
 
         <div class="investment-includes">Includes</div>
         <ul class="investment-includes-list">
@@ -1756,19 +1740,19 @@
         </ul>
 
         <div class="investment-terms">
-          £1,500 on booking, before October — secures the October shoot date · £1,500 in November · £2,000 in December<br>
+          £1,500 on booking, before October, secures the October shoot date · £1,500 in November · £2,000 in December<br>
           Any additional shoot or extra deliverables inside the quarter are a paid variation, scoped separately, outside the £5,000.
         </div>
       </div>
 
       <div class="investment-alt">
         <div class="investment-alt-label">At The Quarter's End</div>
-        <div class="investment-alt-amount">Reassessed together at the end of December, based on the assets delivered and the trajectory of the business — further shoot days, additional cuts and continued distribution shaped from there. No pricing attached until then.</div>
+        <div class="investment-alt-amount">Reassessed together at the end of December, based on the assets delivered and the trajectory of the business. Further shoot days, additional cuts and continued distribution shaped from there. No pricing attached until then.</div>
       </div>
     </div>
   </section>
 
-  <!-- ====== ACT 09 — THE AGREEMENT ====== -->
+  <!-- ====== ACT 09 - THE AGREEMENT ====== -->
   <section class="scene agreement" data-scene="agreement" data-title="Greenlight">
     <div class="agreement-inner">
       <div class="label-caps" style="margin-bottom:18px;">Act 09 · Greenlight</div>
@@ -2069,7 +2053,7 @@
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
-        subject: 'Pete Wilson — Greenlight the Foundation Phase',
+        subject: 'Pete Wilson · Greenlight the Foundation Phase',
         message: `Pete Wilson has greenlighted the foundation phase. Send the booking invoice (£1,500) and confirm the October shoot date.`,
         email: email,
         _replyto: email !== '(no email entered)' ? email : 'charlie@tillettfilm.com'
