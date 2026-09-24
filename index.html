@@ -378,12 +378,8 @@
     letter-spacing: -0.01em;
     color: var(--ink);
   }
-  .quote-card-text::before {
-    content: '"';
-    color: var(--ink-muted);
-    margin-right: 2px;
-  }
-  .quote-card-text::after { content: '"'; color: var(--ink-muted); }
+  /* No injected quote glyphs: the listening cards are reflections of the
+     discovery call, not verbatim quotes, and must not render as quotes. */
 
   .interpretation-card {
     background: var(--ink);
@@ -731,7 +727,52 @@
     min-width: 110px;
   }
 
-  /* ===== SCENE 06 - THE INVESTMENT ===== */
+  /* ===== SCENE 06 - THE INVESTMENT (plain schedule) ===== */
+  .invest-banner {
+    aspect-ratio: 21 / 6;
+    overflow: hidden;
+    background: #0a0a0a;
+    margin-bottom: 54px;
+  }
+  .invest-banner img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .invest-label { margin-bottom: 26px; }
+  .invest-body {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink);
+    max-width: 620px;
+    margin-bottom: 46px;
+  }
+  .invest-schedule { margin-bottom: 46px; }
+  .invest-line {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+  .invest-line:last-child { margin-bottom: 0; }
+  .invest-amount {
+    display: inline-block;
+    min-width: 88px;
+    color: var(--ink);
+  }
+  .invest-foot {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 620px;
+  }
+  @media (max-width: 700px) {
+    .invest-banner { aspect-ratio: 16 / 7; margin-bottom: 38px; }
+    .invest-body, .invest-line { font-size: 16px; }
+    .invest-amount { display: block; min-width: 0; }
+  }
+
+  /* ===== legacy investment block styles (unused) ===== */
   .investment-block {
     background: var(--bg-invert);
     color: #fff;
@@ -1411,7 +1452,7 @@
         </div>
         <div class="slate-item">
           <div class="slate-label">Prepared</div>
-          <div class="slate-value">24 August 2026</div>
+          <div class="slate-value">24 September 2026</div>
         </div>
         <div class="slate-item">
           <div class="slate-label">Run Time</div>
@@ -1540,7 +1581,7 @@
         <div class="pillar">
           <div class="pillar-num">03 · The Market</div>
           <div class="pillar-title">Built For Who Decides</div>
-          <div class="pillar-desc">Made for kitchen fitters, merchants, developers and refurb and housing buyers. Not the general audience! Every frame aimed at the people who choose who gets the job.</div>
+          <div class="pillar-desc">Made for kitchen fitters, merchants, developers and refurb and housing buyers. Not the general audience. Every frame aimed at the people who choose who gets the job.</div>
         </div>
       </div>
 
@@ -1742,38 +1783,23 @@
   <!-- ====== ACT 08 - THE INVESTMENT ====== -->
   <section class="scene" data-scene="investment" data-title="The Investment">
     <div class="scene-inner narrow">
-      <div class="scene-header">
-        <div class="label-caps">Act 08 · The Investment</div>
-        <h2 class="heading-large">The investment.</h2>
-        <p class="body-large" style="margin-top:14px;">A foundation phase, not a retainer.</p>
+
+      <div class="invest-banner">
+        <img src="assets/banner/laser-line.jpg" alt="">
       </div>
 
-      <div class="investment-block">
-        <div class="investment-label">Foundation Phase · October–December</div>
-        <div class="investment-amount">£5,000<span class="investment-amount-suffix">across the quarter</span></div>
-        <p class="investment-summary">One shoot day in October banking a full quarter's material, a profile and website audit with bio rewrite, and one further cut in each of November and December. Payment weighted to your cashflow, lighter at the start, heavier at the end.</p>
+      <div class="label-caps invest-label">Investment</div>
 
-        <div class="investment-includes">Includes</div>
-        <ul class="investment-includes-list">
-          <li>Pre-production, planning and visual direction</li>
-          <li>One full shoot day on location</li>
-          <li>Hero capability film, 6–8 stills, and a profile and website audit with bio rewrite</li>
-          <li>Final colour grade and audio prepared for the master film</li>
-          <li>Voiceover recorded on the shoot day, with subtitles on every cut</li>
-          <li>One further cut in November and one in December, from the same shoot</li>
-          <li>Reassessment at the end of December to shape the ongoing programme</li>
-        </ul>
+      <p class="invest-body">A three-month foundation phase. £5,000 total, spread across the quarter and weighted to your cashflow, lighter to start.</p>
 
-        <div class="investment-terms">
-          £1,500 on booking, before October, secures the October shoot date · £1,500 in November · £2,000 in December<br>
-          Any additional shoot or extra deliverables inside the quarter are a paid variation, scoped separately, outside the £5,000.
-        </div>
+      <div class="invest-schedule">
+        <p class="invest-line"><span class="invest-amount">£1,000</span> on booking, secures your October shoot</p>
+        <p class="invest-line"><span class="invest-amount">£1,500</span> end of November</p>
+        <p class="invest-line"><span class="invest-amount">£2,500</span> end of December</p>
       </div>
 
-      <div class="investment-alt">
-        <div class="investment-alt-label">At The Quarter's End</div>
-        <div class="investment-alt-amount">Reassessed together at the end of December, based on the assets delivered and the trajectory of the business. Further shoot days, additional cuts and continued distribution shaped from there. No pricing attached until then.</div>
-      </div>
+      <p class="invest-foot">First payment locks the shoot date. Everything else runs as above.</p>
+
     </div>
   </section>
 
@@ -1790,7 +1816,7 @@
         </div>
         <div class="agreement-step">
           <span class="agreement-step-num">No. 02</span>
-          <span><strong>£1,500 on booking</strong> secures the October shoot date; delivery follows. £1,500 due in November, £2,000 due in December.</span>
+          <span><strong>£1,000 on booking</strong> secures your October shoot. £1,500 at the end of November, £2,500 at the end of December.</span>
         </div>
         <div class="agreement-step">
           <span class="agreement-step-num">No. 03</span>
@@ -2079,7 +2105,7 @@
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
         subject: 'Pete Wilson · Greenlight the Foundation Phase',
-        message: `Pete Wilson has greenlighted the foundation phase. Send the booking invoice (£1,500) and confirm the October shoot date.`,
+        message: `Pete Wilson has greenlighted the foundation phase. Send the booking invoice (£1,000) and confirm the October shoot date.`,
         email: email,
         _replyto: email !== '(no email entered)' ? email : 'charlie@tillettfilm.com'
       })
