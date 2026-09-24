@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foundation Phase · Wilson Laser Templating × Tillett Film</title>
+<meta name="description" content="Payment schedule for the three-month foundation phase.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf9f6;
+    --ink: #0a0a0a;
+    --ink-soft: #5a5a58;
+    --ink-muted: #8a8a86;
+    --line: rgba(10,10,10,0.12);
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 96px 40px 120px;
+  }
+
+  .label-caps {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--ink-muted);
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { margin-bottom: 76px; }
+  .brandmark {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 44px;
+  }
+  .project {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+  .parties {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- blocks ---------- */
+  .block { margin-bottom: 68px; }
+  .block-label { margin-bottom: 26px; }
+
+  .body-line {
+    font-size: 17px;
+    line-height: 1.65;
+    max-width: 560px;
+  }
+
+  .scope-line {
+    display: grid;
+    grid-template-columns: 108px 1fr;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .scope-line:last-child { margin-bottom: 0; }
+  .scope-when { color: var(--ink-muted); }
+
+  /* ---------- payment schedule ---------- */
+  .schedule { margin-top: 42px; margin-bottom: 42px; }
+  .pay-line {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+  .pay-line:last-child { margin-bottom: 0; }
+  .foot-line {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 560px;
+  }
+
+  /* ---------- acceptance ---------- */
+  .accept { margin-top: 84px; }
+  .sign-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    margin-top: 36px;
+  }
+  .sign-field { }
+  .sign-rule {
+    height: 1px;
+    background: var(--line);
+    margin-bottom: 10px;
+  }
+  .sign-name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .sign-role {
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 2px;
+  }
+  .sign-space { height: 46px; }
+
+  .colophon {
+    margin-top: 88px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--ink-muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 600px) {
+    .sheet { padding: 56px 24px 80px; }
+    .masthead { margin-bottom: 56px; }
+    .block { margin-bottom: 52px; }
+    .project { font-size: 22px; }
+    .body-line, .pay-line { font-size: 16px; }
+    .pay-line { grid-template-columns: 78px 1fr; }
+    .scope-line { grid-template-columns: 1fr; }
+    .scope-when { margin-bottom: 2px; }
+    .sign-grid { grid-template-columns: 1fr; gap: 34px; }
+    .accept { margin-top: 60px; }
+  }
+
+  /* ---------- print / PDF ---------- */
+  @page { size: A4; margin: 18mm 16mm; }
+  @media print {
+    :root { --bg: #ffffff; }
+    body { background: #fff; }
+    .sheet {
+      max-width: none;
+      padding: 0;
+    }
+    .masthead { margin-bottom: 40px; }
+    .brandmark { margin-bottom: 26px; }
+    .block { margin-bottom: 34px; }
+    .schedule { margin-top: 26px; margin-bottom: 26px; }
+    .accept { margin-top: 44px; }
+    .colophon { margin-top: 44px; }
+    .block, .accept, .schedule { break-inside: avoid; }
+    a { text-decoration: none; color: inherit; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="brandmark">Tillett Film</div>
+    <div class="project">Foundation Phase</div>
+    <p class="parties">
+      Wilson Laser Templating and Tillett Film<br>
+      October to December 2026
+    </p>
+  </div>
+
+  <div class="block">
+    <div class="label-caps block-label">What it covers</div>
+    <p class="scope-line"><span class="scope-when">October</span>One shoot day on site. Hero capability film, 6 to 8 stills, profile and website audit, bio rewrite.</p>
+    <p class="scope-line"><span class="scope-when">November</span>Distribution from the October material, plus one capability cut.</p>
+    <p class="scope-line"><span class="scope-when">December</span>Continued distribution, plus one further cut. Reassessed at month end.</p>
+  </div>
+
+  <div class="block">
+    <div class="label-caps block-label">Investment</div>
+    <p class="body-line">A three-month foundation phase. £5,000 total, spread across the quarter and weighted to your cashflow, lighter to start.</p>
+
+    <div class="schedule">
+      <p class="pay-line"><span class="pay-amount">£1,000</span>on booking, secures your October shoot</p>
+      <p class="pay-line"><span class="pay-amount">£1,500</span>end of November</p>
+      <p class="pay-line"><span class="pay-amount">£2,500</span>end of December</p>
+    </div>
+
+    <p class="foot-line">First payment locks the shoot date. Everything else runs as above.</p>
+  </div>
+
+  <div class="accept">
+    <div class="label-caps block-label">Agreed</div>
+    <div class="sign-grid">
+      <div class="sign-field">
+        <div class="sign-space"></div>
+        <div class="sign-rule"></div>
+        <div class="sign-name">Pete Wilson</div>
+        <div class="sign-role">Wilson Laser Templating</div>
+      </div>
+      <div class="sign-field">
+        <div class="sign-space"></div>
+        <div class="sign-rule"></div>
+        <div class="sign-name">Charlie Tillett</div>
+        <div class="sign-role">Director, Tillett Film</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="colophon">
+    <span>charlie@tillettfilm.com</span>
+    <span>24 September 2026</span>
+  </div>
+
+</div>
+
+</body>
+</html>
